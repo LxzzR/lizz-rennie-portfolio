@@ -108,11 +108,9 @@ section {
   width: 100%;
 }
 
-/* !!!!! Nav is collapsing - must fix */
 .nav {
   background: linear-gradient(rgb(35, 30, 32), rgb(25, 20, 22));
-  position: sticky;
-  top: 0;
+  width: 100%;
 }
 
 .nav ul {
@@ -308,7 +306,7 @@ section {
 .changeColorsFast {
   animation-delay: 0;
   animation-direction: normal;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-name: changeColors;
@@ -351,10 +349,19 @@ section {
 
   .about,
   .skills,
+  .portfolio,
+  .landingWrapper {
+    margin: auto;
+    max-width: 1200px;
+    width: 90%;
+  }
+
+  .about,
+  .skills,
   .portfolio {
     border-radius: 10px;
     margin: 50px auto;
-    max-width: 1000px;
+    max-width: 1200px;
     width: 90%;
   }
 
@@ -407,6 +414,11 @@ section {
 /* Medium-Large Screen Sizes*/
 
 @media screen and (min-width: 975px) {
+  .landing h1 {
+    font-size: 3.5rem;
+    padding: 60px 0;
+  }
+
   .nav ul {
     width: 60%;
   }
@@ -475,7 +487,6 @@ section {
     box-shadow: 0 0 30px rgba(120, 193, 183, 0.5);
     height: 275px;
     width: 275px;
-    margin: auto;
   }
 
   .about .copyWrapper {
@@ -487,6 +498,7 @@ section {
   }
 
   .projectWrapper {
+    align-items: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
