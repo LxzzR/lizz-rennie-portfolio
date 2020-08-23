@@ -33,29 +33,34 @@
       crossorigin="anonymous"
     ></script>
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <!-- Title -->
     <title>Lizz Rennie | Portfolio</title>
   </head>
 
   <body>
-    <header class="landing contentContainer">
-      <h1 class="change-colors-slow">
-        &lt;Lizz Rennie&gt;<br />Front-End Web Developer
-      </h1>
+    <header class="landing">
+      <div class="contentContainer">
+        <h1 class="changeColorsSlow">
+          &lt;Lizz Rennie&gt;<br />Front-End Web Developer
+        </h1>
+      </div>
       <!-- Navigation -->
       <nav class="nav">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="contentContainer">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#follow">Follow</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <!-- Main Begins -->
     <main id="main" class="main">
+
       <!-- Section 1: About -->
       <section id="about" class="about">
         <div class="contentContainer">
@@ -70,7 +75,7 @@
           <div class="copyWrapper">
             <h2>Hello, I'm Lizz!</h2>
             <p>
-              I'm a user experience and accessibility ally who believes that coding web products well and according to standards is a high priority because people are at the very centre of everything we build.
+              I'm a user experience ally who believes that coding web products well and according to standards is a high priority because people are at the very centre of everything we build.
             </p>
           </div>
         </section>
@@ -80,22 +85,22 @@
       <!-- Section 2: Skills (+ Icons)-->
       <section id="skills" class="skills">
         <div class="contentContainer">
-          <p class="change-colors-slow"><i class="fab fa-html5"></i> HTML5</p>
-          <p class="change-colors-slow"><i class="fab fa-css3-alt"></i> CSS3</p>
-          <p class="change-colors-slow">
+          <p class="changeColorsSlow"><i class="fab fa-html5"></i> HTML5</p>
+          <p class="changeColorsSlow"><i class="fab fa-css3-alt"></i> CSS3</p>
+          <p class="changeColorsSlow">
             <i class="fab fa-js-square"></i> JavaScript
           </p>
-          <p class="change-colors-slow">
+          <p class="changeColorsSlow">
             <i class="fas fa-universal-access"></i> A11Y
           </p>
-          <p class="change-colors-slow">
+          <p class="changeColorsSlow">
             <i class="fab fa-react"></i> React
           </p>
-          <p class="change-colors-slow">
+          <p class="changeColorsSlow">
             <i class="fas fa-paint-brush"></i> UI Design
           </p>
-          <p class="change-colors-slow"><i class="fas fa-user"></i> UX Theory</p>
-          <p class="change-colors-slow">
+          <p class="changeColorsSlow"><i class="fas fa-user"></i> UX Theory</p>
+          <p class="changeColorsSlow">
             <i class="fas fa-expand-alt"></i> Responsive
           </p>
         </div>
@@ -105,83 +110,98 @@
       <section id="portfolio" class="portfolio">
         <div class="contentContainer">
           <h2>Portfolio</h2>
-          <!-- Project 3: Personality Quiz -->
+          <!-- Project 1: Personality Quiz -->
           <div class="project">
-            <h3>Personality Quiz</h3>
-            <div class="img-wrapper">
-              <img
-                src="./assets/who-you-are.png"
-                alt="Who You Are? Personality quiz screenshot."
-              />
+            <div class="projectWrapper">
+              <h3>Personality Quiz</h3>
+              <div class="imgWrapper">
+                <img
+                  src="./assets/who-you-are.png"
+                  alt="Who You Are? Personality quiz screenshot."
+                />
+              </div>
+              <p class="stack">JQuery | SASS | Semantic HTML</p>
+              <p>
+                This cheeky personality quiz will reveal the ultimate truth about
+                your personality. Built accessibility and semantics in mind using
+                jQuery.
+              </p>
+              <div class="btnWrapper">
+                <a href="" class="btn" target="_BLANK">View Code</a>
+                <a href="" class="btn" target="_BLANK">View Live</a>
+              </div>
             </div>
-            <p class="stack">JQuery | SASS | Semantic HTML</p>
-            <p>
-              This cheeky personality quiz will reveal the ultimate truth about
-              your personality. Built accessibility and semantics in mind using
-              jQuery.
-            </p>
-            <a href="" class="view-btn" target="_BLANK">View Code</a>
-            <a href="" class="view-btn" target="_BLANK">View Live</a>
           </div>
   
           <!-- Project 2: Poll it Together -->
           <div class="project">
-            <h3>Poll it Together</h3>
-            <div class="img-wrapper">
-              <img
-                src="./assets/poll-it-together.png"
-                alt="Poll it Together screenshot"
-              />
+            <div class="projectWrapper">
+              <h3>Poll it Together</h3>
+              <div class="imgWrapper">
+                <img
+                  src="./assets/poll-it-together.png"
+                  alt="Poll it Together screenshot"
+                />
+              </div>
+              <p class="stack">React | Firebase |Team Project</p>
+              <p>
+                Create an anonymous poll using our simple and easy to use poll
+                creation app. Built with React, Firebase and teamwork.
+              </p>
+              <div class="btnWrapper">
+                <a href="" class="btn" target="_BLANK">View Code</a>
+                <a href="" class="btn" target="_BLANK">View Live</a>
+              </div>
             </div>
-            <p class="stack">React | Firebase |Team Project</p>
-            <p>
-              Create an anonymous poll using our simple and easy to use poll
-              creation app. Built with React, Firebase and teamwork.
-            </p>
-            <a href="" class="view-btn" target="_BLANK">View Code</a>
-            <a href="" class="view-btn" target="_BLANK">View Live</a>
           </div>
   
           <!-- Project 3: Dev Secrets -->
           <div class="project">
-            <h3>Dev Secrets</h3>
-            <div class="img-wrapper">
-              <img src="./assets/dev-secrets.png" alt="Dev Secrets screenshot" />
+            <div class="projectWrapper">
+              <h3>Dev Secrets</h3>
+              <div class="imgWrapper">
+                <img src="./assets/dev-secrets.png" alt="Dev Secrets screenshot" />
+              </div>
+              <p class="stack">React | Firebase | SASS</p>
+              <p>
+                Inspired by Post Secret, this app helps devs combat imposter
+                syndrome. Built using Firebase, React and SASS.
+              </p>
+              <div class="btnWrapper">
+                <a href="" class="btn" target="_BLANK">View Code</a>
+                <a href="" class="btn" target="_BLANK">View Live</a>
+              </div>
             </div>
-            <p class="stack">React | Firebase | SASS</p>
-            <p>
-              Inspired by Post Secret, this app helps devs combat imposter
-              syndrome by allowing users to see that they are not alone. Built
-              using Firebase, React and SASS.
-            </p>
-            <a href="" class="view-btn" target="_BLANK">View Code</a>
-            <a href="" class="view-btn" target="_BLANK">View Live</a>
           </div>
   
   
           <!-- Project 4: Tarot Card App -->
           <div class="project">
-            <h3>Tarot Card App</h3>
-            <div class="img-wrapper">
-              <img src="" alt="Tarot Card App screenshot" />
+            <div class="projectWrapper">
+              <h3>Tarot Card App</h3>
+              <div class="imgWrapper">
+                <img src="" alt="Tarot Card App screenshot" />
+              </div>
+              <p class="stack">CSS | JQuery | API</p>
+              <p>
+                This minimalist tarot app allows users to enjoy a single or three
+                card reading. Built using the howl tarot API and jQuery.
+              </p>
+              <div class="btnWrapper">
+                <a href="" class="btn" target="_BLANK">View Code</a>
+                <a href="" class="btn" target="_BLANK">View Live</a>
+              </div>
             </div>
-            <p class="stack">CSS | JQuery | API</p>
-            <p>
-              This minimalist tarot app allows users to enjoy a single or three
-              card reading. Built using the howl tarot API and jQuery.
-            </p>
-            <a href="" class="view-btn" target="_BLANK">View Code</a>
-            <a href="" class="view-btn" target="_BLANK">View Live</a>
-          </div>
+            </div>
         </div>
       </section>
 
       <!-- Footer Begins -->
-      <footer id="contact" class="contact">
+      <footer id="follow" class="follow">
         <h3>Follow Me</h3>
         <p>
           <a
-            class="change-colors-fast"
+            class="changeColorsFast"
             href="https://github.com/lizzSoup"
             target="_BLANK"
             ><i 
@@ -192,7 +212,7 @@
         </p>
         <p>
           <a
-            class="change-colors-fast"
+            class="changeColorsFast"
             href="https://twitter.com/lizzsoup"
             target="_BLANK"
             ><i class="fab fa-twitter"
@@ -201,7 +221,7 @@
         </p>
         <p>
           <a
-            class="change-colors-fast"
+            class="changeColorsFast"
             href="https://codepen.io/LizzSoup"
             target="_BLANK"
             ><i 
@@ -211,7 +231,7 @@
         </p>
         <p>
           <a
-            class="change-colors-fast"
+            class="changeColorsFast"
             href="https://www.linkedin.com/in/lizz-rennie/"
             target="_BLANK"
             ><i 
