@@ -310,7 +310,7 @@ main {
 .changeColorsSlow {
   animation-delay: 0;
   animation-direction: normal;
-  animation-duration: 2s;
+  animation-duration: 6s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-name: changeColors;
@@ -320,7 +320,7 @@ main {
 .changeColorsFast {
   animation-delay: 0;
   animation-direction: normal;
-  animation-duration: 1s;
+  animation-duration: 6s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-name: changeColors;
